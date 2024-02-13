@@ -1,0 +1,127 @@
+
+//   CREATE TABLE `mbeplusc_kadisha_v1`.`blocks` (
+//     `id` INT(11) NOT NULL AUTO_INCREMENT,
+//     `blockNameHe` VARCHAR(255) NOT NULL,
+//     `blockNameEn` VARCHAR(255) NOT NULL,
+//     `blockLocation` VARCHAR(11) NOT NULL,
+//     `nationalInsuranceCode` VARCHAR(11) NOT NULL,
+//     `blockCode` VARCHAR(11) NOT NULL,
+//     `comments` VARCHAR(255) NOT NULL,
+//     `coordinates` VARCHAR(50) NOT NULL,
+//     `documentsList` TEXT NOT NULL,
+//     `cemeteryId` INT(11) NOT NULL,
+//     `isActive` BOOLEAN NOT NULL,
+//     `createdDate` VARCHAR(50) NOT NULL,
+//     `updateDate` VARCHAR(50) NOT NULL,
+//     `inactiveDate` VARCHAR(50) NOT NULL,
+//     PRIMARY KEY (`id`)
+//   ) ENGINE = InnoDB;
+
+   CREATE TABLE `mbeplusc_kadisha_v1`.`plots` (
+     `id` INT(11) NOT NULL AUTO_INCREMENT,
+     `plotNameHe` VARCHAR(255) NOT NULL,
+     `plotNameEn` VARCHAR(255) NOT NULL,
+     `plotLocation` VARCHAR(11) NOT NULL,
+     `plotType` VARCHAR(11) NOT NULL,
+     `nationalInsuranceCode` VARCHAR(11) NOT NULL,
+     `plotCode` VARCHAR(11) NOT NULL,
+     `blockId` INT(11) NOT NULL,
+     `comments` VARCHAR(255) NOT NULL,
+     `coordinates` VARCHAR(50) NOT NULL,
+     `documentsList` TEXT NOT NULL,
+     `isActive` BOOLEAN NOT NULL,
+     `createdDate` VARCHAR(50) NOT NULL,
+     `updateDate` VARCHAR(50) NOT NULL,
+     `inactiveDate` VARCHAR(50) NOT NULL,
+     PRIMARY KEY (`id`)
+   ) ENGINE = InnoDB;
+
+//   CREATE TABLE `mbeplusc_kadisha_v1`.`rows` (
+//     `id` INT(11) NOT NULL AUTO_INCREMENT,
+//     `lineNameHe` VARCHAR(255) NOT NULL,
+//     `lineNameEn` VARCHAR(255) NOT NULL,
+//     `lineLocation` VARCHAR(11) NOT NULL,
+//     `serialNumber` INT(11) NOT NULL,
+//     `plotId` INT(11) NOT NULL,
+//     `isActive` BOOLEAN NOT NULL,
+//     `comments` VARCHAR(255) NOT NULL,
+//     `documentsList` TEXT NOT NULL,
+//     `createdDate` VARCHAR(50) NOT NULL,
+//     `updateDate` VARCHAR(50) NOT NULL,
+//     `inactiveDate` VARCHAR(50) NOT NULL,
+//     PRIMARY KEY (`id`)
+//   ) ENGINE = InnoDB;
+  
+   CREATE TABLE `mbeplusc_kadisha_v1`.`areaGrave` (
+     `id` INT(11) NOT NULL AUTO_INCREMENT,
+     `areaLocation` VARCHAR(255) NOT NULL,
+     `coordinates` VARCHAR(50) NOT NULL,
+     `gravesList` VARCHAR(50) NOT NULL,
+     `lineId` INT(11) NOT NULL,
+     `isActive` BOOLEAN NOT NULL,
+     `comments` VARCHAR(255) NOT NULL,
+     `documentsList` TEXT NOT NULL,
+     `createdDate` VARCHAR(50) NOT NULL,
+     `updateDate` VARCHAR(50) NOT NULL,
+     `inactiveDate` VARCHAR(50) NOT NULL,
+     PRIMARY KEY (`id`)
+   ) ENGINE = InnoDB;
+  
+//   CREATE TABLE `mbeplusc_kadisha_v1`.`graves` (
+//     `id` INT(11) NOT NULL AUTO_INCREMENT,
+//     `graveName` VARCHAR(255) NOT NULL,
+//     `graveType` VARCHAR(11) NOT NULL,
+//     `graveStatus` VARCHAR(11) NOT NULL,
+//     `graveLocation` INT(11) NOT NULL,
+//     `constructionCost` VARCHAR(50) NOT NULL,
+//     `isSmallGrave` BOOLEAN NOT NULL,
+//     `areaId` INT(11) NOT NULL,
+//     `isActive` BOOLEAN NOT NULL,
+//     `comments` VARCHAR(255) NOT NULL,
+//     `documentsList` TEXT NOT NULL,
+//     `createdDate` VARCHAR(50) NOT NULL,
+//     `saveDate` VARCHAR(50) NOT NULL,
+//     `updateDate` VARCHAR(50) NOT NULL,
+//     `inactiveDate` VARCHAR(50) NOT NULL,
+//     PRIMARY KEY (`id`)
+//   ) ENGINE = InnoDB;
+  
+//   CREATE TABLE `mbeplusc_kadisha_v1`.`purchase` (
+//     `id` INT(11) NOT NULL AUTO_INCREMENT,
+//     `serialPurchaseId` VARCHAR(11) NOT NULL,
+//     `status` VARCHAR(11) NOT NULL,
+//     `purchaseType` VARCHAR(11) NOT NULL,
+//     `isFuneralPayments` VARCHAR(11) NOT NULL,
+//     `isNationalInsuranceBurial` BOOLEAN NOT NULL,
+//     `partnerIdentityNumberType` VARCHAR(11) NOT NULL,
+//     `partnerIdentityNumber` VARCHAR(11) NOT NULL,
+//     `graveId` INT(11) NOT NULL,
+//     `isNewGraveInSameArea` BOOLEAN NOT NULL,
+//     `price` INT(11) NOT NULL,
+//     `numOfPayments` INT(11) NOT NULL,
+//     `paymentsList` VARCHAR(255) NOT NULL,
+//     `additionalpaymentsList` VARCHAR(255) NOT NULL,
+//     `refundInvoiceNumber` VARCHAR(255) NOT NULL,
+//     `historyList` VARCHAR(255) NOT NULL,
+//     `savedGravesList` VARCHAR(255) NOT NULL,
+//     `refundAmount` INT(11) NOT NULL,
+//     `cancelDate` VARCHAR(50) NOT NULL,
+//     `contactId` INT(11) NOT NULL,
+//     `burialLicense` VARCHAR(255) NOT NULL,
+//     `dedthDate` VARCHAR(50) NOT NULL,
+//     `burialDate` VARCHAR(50) NOT NULL,
+//     `isDiedAbroad` BOOLEAN NOT NULL,
+//     `isActive` BOOLEAN NOT NULL,
+//     `comments` VARCHAR(255) NOT NULL,
+//     `documentsList` TEXT NOT NULL,
+//     `createdDate` VARCHAR(50) NOT NULL,
+//     `saveDate` VARCHAR(50) NOT NULL,
+//     `updateDate` VARCHAR(50) NOT NULL,
+//     `inactiveDate` VARCHAR(50) NOT NULL,
+//     PRIMARY KEY (`id`)
+//   ) ENGINE = InnoDB;
+
+  
+  
+  
+

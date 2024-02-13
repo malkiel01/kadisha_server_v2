@@ -1,0 +1,9 @@
+{
+    "env" : {
+        "HOST" : "mbe-plus.com",
+        "USER" : "mbeplusc_test",
+        "PASSWORD" : "Gxfv16be",
+        "DATABASE" : "mbeplusc_kadisha_v1",
+        "CONNECTION_LIMIT" : 10
+    }
+}
