@@ -1,11 +1,10 @@
-const cors = require('cors');
-
-
+const cors = require('cors')
 
 const express = require('express')
 const app = express()
 
 app.use(cors()); // זה יאפשר גישה מכל מקום, להגבלה ניתן להשתמש באופציות
+
 
 // Imported
 const connectionsRouter = require('./api/routes/connections')
@@ -30,14 +29,28 @@ app.use((req, res, next) => {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requestet-With, Content-Type, Accept, Authorization")
     if (req.method === "OPTIONS") {
         res.header("Access-Control-Allow-Methods", "PUT, POST, PATCH, DELETE, GET")
-        return res.status(200).json({})
-        
+        return res.status(200).json({})  
     }
     next()
 })
 
+
+const port = 3001;
+
+app.post('/connection/login', (req, res) => {
+  // הגוף של הפונקציה שמטפלת בבקשה
+  console.log('3456776543');
+});
+
+app.listen(port, () => {
+  console.log(`Server listening at http://localhost:${port}`);
+});
+
+
+
+
 // Router
-app.use('/connection', connectionsRouter)
+// app.use('/connection', connectionsRouter)
 app.use('/api/cemeteries', cemeteriesRouter)
 app.use('/api/blocks', blocksRouter)
 app.use('/api/plots', plotsRouter)
