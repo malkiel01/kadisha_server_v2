@@ -1,6 +1,11 @@
+const cors = require('cors');
+
+
+
 const express = require('express')
 const app = express()
 
+app.use(cors()); // זה יאפשר גישה מכל מקום, להגבלה ניתן להשתמש באופציות
 
 // Imported
 const connectionsRouter = require('./api/routes/connections')
