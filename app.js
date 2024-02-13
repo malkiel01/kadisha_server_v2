@@ -35,20 +35,6 @@ app.use((req, res, next) => {
 })
 
 
-const port = 3001;
-
-app.post('/connection/login', (req, res) => {
-  // הגוף של הפונקציה שמטפלת בבקשה
-  console.log('3456776543');
-});
-
-app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`);
-});
-
-
-
-
 // Router
 // app.use('/connection', connectionsRouter)
 app.use('/api/cemeteries', cemeteriesRouter)
